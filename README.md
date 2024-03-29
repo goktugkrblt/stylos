@@ -2,6 +2,8 @@
 
 Stylos is a simple UI game built using React and CSS. In this game, players are presented with a set of shapes and they need to identify the correct color associated with each shape.
 
+Live: https://goktug.bio/stylos/
+
 # Features
 
 - Players try to achieve what is asked in the question by moving the bar in various UI structures.
