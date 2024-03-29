@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+background-color: #fcfcfc;
+}
+
+.App{
+    padding: 120px;
+    margin: 0px auto;
+    max-width: 1440px;
+
+}
+
+.game-grid{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 100%;
+  background-color: #b8b0b0;
+  transition: width 0.2s ease-in-out;
+}
+
+.ball {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px;
+  transition: box-shadow 150ms ease 0s, transform 150ms ease 0s;
+  cursor: move;
+  z-index: 99;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #919191;
+}
+
+.opacity-div{
+  width: 200px;
+  height: 200px;
+  background-color: #161616;
+  opacity: 1;
+}
+
+.opacity-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px;
+}
+
+.opacity-div{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+}
+
+.game-header{
+  font-size: 16px;
+  font-weight: 300;
+  height: 30px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.congrats-animation {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+}
+
+.font-size-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px;
+}
+
+.lion{
+  margin-top: 40px;
+  max-height: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.flex-gap-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+height: 200px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: #161616;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: #706c6c; 
+}
+
+.justdoitimg{
+  width: auto;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.border-radius-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-height-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px;
+}
+
+.justdoit-paragraph{
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.letter-spacing-game{
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 100px; 
+}
+
+h1{
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.game-project-header{
+  margin-bottom: 70px;
+}
+
+.game-project-header p{
+  font-weight: 200;
+}
+
+.game-project-header h1 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.game-project-header p {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.built-by{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #161616;
+}
+
+.built-by a{
+  color: #000;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+}
+
+.built-by a:hover{
+  color: #b6b6c5;
+}
+
+#root{
+  position: relative;
+}
+
+@media only screen and (max-width: 1068px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .justdoitimg{
+    width: 200px;
+    height: auto;
+  }
+
+  .image-container{
+    height: 200px;
+  }
+  .lion{
+    height: 200px;
+  }
+  .opacity-game, .font-size-game, .flex-gap-game, .border-radius-game, .letter-spacing-game, .line-height-game{
+    padding: 30px;
+  }
+  .App{
+    padding: 40px;
+    padding-bottom: 100px;
+  }
+}
+
+.congrats-background{
+  background-image: url(../public/congrats.gif);
+}
+
